@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS partido_presidente (
 );
 
 CREATE TABLE IF NOT EXISTS presidente (
-    id_presidente integer primary key,,
+    id_presidente integer primary key,
     nom_presidente character varying(255),
     num_mandato character varying(255)
 );
