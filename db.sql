@@ -35,517 +35,407 @@ CREATE TABLE presidente (
     num_mandato character varying(255)
 );
 
-COPY despesa (id_despesa, vlr_despesa, dat_compra, id_item) FROM stdin;
-259	341	2022-01-04	1
-260	824	2022-01-04	6
-261	1052	2022-01-04	6
-262	2877	2022-01-04	11
-263	1145	2022-01-04	11
-174	7026	2022-02-03	8
-175	15415	2022-02-03	8
-176	5222	2022-02-03	8
-177	2403	2022-02-03	8
-178	184	2022-03-03	1
-179	1271	2022-03-03	11
-180	395	2022-03-03	1
-181	1246	2022-03-03	9
-182	566	2022-04-03	1
-183	432	2022-04-03	7
-184	1380	2022-04-03	7
-185	967	2022-04-03	1
-186	102	2022-04-03	1
-187	1476	2022-07-03	12
-53	1824	2022-08-02	1
-54	156	2022-08-02	5
-55	312	2022-08-02	5
-56	78	2022-08-02	5
-57	78	2022-08-02	5
-58	156	2022-08-02	5
-59	78	2022-08-02	5
-188	1968	2022-08-03	1
-264	156	2022-08-04	5
-265	234	2022-08-04	5
-266	156	2022-08-04	5
-267	156	2022-08-04	5
-268	17410	2022-08-04	8
-269	39314	2022-08-04	8
-270	28126	2022-08-04	8
-271	5490	2022-08-04	8
-272	1198	2022-08-04	1
-273	702	2022-08-04	1
-274	446	2022-08-04	1
-60	1637	2022-09-02	1
-189	800	2022-09-03	12
-1	2377	2022-10-01	4
-2	1404	2022-10-01	4
-3	1297	2022-10-01	4
-4	70	2022-10-01	7
-9	2378	2023-10-01	4
-10	1405	2023-10-01	4
-11	1298	2023-10-01	4
-12	71	2023-10-01	7
-17	2379	2024-10-01	4
-18	1406	2024-10-01	4
-19	1299	2024-10-01	4
-20	72	2024-10-01	7
-25	2380	2025-10-01	4
-26	1407	2025-10-01	4
-27	1300	2025-10-01	4
-28	73	2025-10-01	7
-33	2381	2026-10-01	4
-34	1408	2026-10-01	4
-35	1301	2026-10-01	4
-36	74	2026-10-01	7
-41	2382	2027-10-01	4
-42	1409	2027-10-01	4
-43	1302	2027-10-01	4
-44	75	2027-10-01	7
-49	2383	2028-10-01	4
-50	1410	2028-10-01	4
-51	1303	2028-10-01	4
-52	76	2028-10-01	7
-61	150	2022-10-02	6
-62	150	2022-10-02	6
-63	150	2022-10-02	6
-64	150	2022-10-02	6
-65	150	2022-10-02	6
-66	150	2022-10-02	6
-67	265	2022-10-02	1
-68	368	2022-10-02	1
-69	1548	2022-10-02	1
-70	265	2022-10-02	1
-71	150	2022-10-02	6
-72	150	2022-10-02	6
-73	150	2022-10-02	6
-74	150	2022-10-02	6
-75	150	2022-10-02	6
-76	150	2022-10-02	6
-77	150	2022-10-02	6
-78	150	2022-10-02	6
-79	150	2022-10-02	6
-80	150	2022-10-02	6
-81	150	2022-10-02	6
-82	150	2022-10-02	6
-83	150	2022-10-02	6
-84	150	2022-10-02	6
-85	150	2022-10-02	6
-86	150	2022-10-02	6
-87	150	2022-10-02	6
-88	150	2022-10-02	6
-89	150	2022-10-02	6
-90	150	2022-10-02	6
-91	150	2022-10-02	6
-92	150	2022-10-02	6
-93	150	2022-10-02	6
-94	150	2022-10-02	6
-95	150	2022-10-02	6
-96	150	2022-10-02	6
-97	150	2022-10-02	6
-98	150	2022-10-02	6
-99	150	2022-10-02	6
-100	150	2022-10-02	6
-101	150	2022-10-02	6
-102	150	2022-10-02	6
-103	150	2022-10-02	6
-104	150	2022-10-02	6
-105	150	2022-10-02	6
-106	150	2022-10-02	6
-107	150	2022-10-02	6
-108	150	2022-10-02	6
-109	150	2022-10-02	6
-110	150	2022-10-02	6
-111	150	2022-10-02	6
-112	150	2022-10-02	6
-113	150	2022-10-02	6
-114	150	2022-10-02	6
-115	150	2022-10-02	6
-116	150	2022-10-02	6
-117	150	2022-10-02	6
-118	150	2022-10-02	6
-119	150	2022-10-02	6
-120	150	2022-10-02	6
-121	150	2022-10-02	6
-122	150	2022-10-02	6
-123	150	2022-10-02	6
-124	150	2022-10-02	6
-125	150	2022-10-02	6
-126	150	2022-10-02	6
-127	150	2022-10-02	6
-128	150	2022-10-02	6
-129	150	2022-10-02	6
-130	150	2022-10-02	6
-131	150	2022-10-02	6
-132	150	2022-10-02	6
-133	150	2022-10-02	6
-134	150	2022-10-02	6
-135	150	2022-10-02	6
-136	150	2022-10-02	6
-190	156	2022-10-03	5
-191	312	2022-10-03	5
-192	78	2022-10-03	5
-193	78	2022-10-03	5
-194	156	2022-10-03	5
-195	78	2022-10-03	5
-196	997	2022-10-03	1
-197	713	2022-10-03	1
-198	156	2022-10-03	5
-199	312	2022-10-03	5
-200	78	2022-10-03	5
-201	78	2022-10-03	5
-202	156	2022-10-03	5
-203	78	2022-10-03	5
-5	465	2022-11-01	11
-6	177	2022-11-01	13
-7	298	2022-11-01	13
-8	88	2022-11-01	13
-13	466	2023-11-01	11
-14	178	2023-11-01	13
-15	299	2023-11-01	13
-16	89	2023-11-01	13
-21	467	2024-11-01	11
-22	179	2024-11-01	13
-23	300	2024-11-01	13
-24	90	2024-11-01	13
-29	468	2025-11-01	11
-30	180	2025-11-01	13
-31	301	2025-11-01	13
-32	91	2025-11-01	13
-37	469	2026-11-01	11
-38	181	2026-11-01	13
-39	302	2026-11-01	13
-40	92	2026-11-01	13
-45	470	2027-11-01	11
-46	182	2027-11-01	13
-47	303	2027-11-01	13
-48	93	2027-11-01	13
-137	156	2022-11-02	5
-138	312	2022-11-02	5
-139	78	2022-11-02	5
-140	78	2022-11-02	5
-141	156	2022-11-02	5
-142	78	2022-11-02	5
-204	1601	2022-11-03	11
-205	275	2022-11-03	11
-206	266	2022-11-03	1
-207	5523	2022-11-03	2
-275	3379	2022-11-04	1
-276	339	2023-01-04	1
-143	3796	2023-02-02	11
-144	398	2023-02-02	11
-208	2701	2023-02-03	8
-209	2067	2023-02-03	8
-210	7978	2023-02-03	8
-211	18682	2023-02-03	8
-212	5750	2023-02-03	8
-213	6099	2023-02-03	8
-214	18811	2023-02-03	9
-215	112	2023-02-03	1
-216	52	2023-02-03	1
-277	2430	2023-02-04	1
-145	5407	2023-03-02	1
-217	3044	2023-03-03	1
-218	102	2023-03-03	1
-146	2443	2023-04-02	1
-219	797	2023-04-03	1
-220	1153	2023-04-03	1
-147	201	2023-05-02	1
-148	2247	2023-05-02	1
-221	1037	2023-05-03	4
-149	6451	2023-06-02	8
-150	30189	2023-06-02	8
-151	5818	2023-06-02	8
-152	3616	2023-06-02	8
-153	13768	2023-06-02	9
-222	2772	2023-06-03	4
-223	1717	2023-06-03	4
-278	2738	2023-06-04	1
-154	4368	2023-09-02	4
-224	18568	2023-09-03	2
-155	1065	2023-10-02	6
-156	3044	2023-10-02	6
-157	189	2023-10-02	11
-158	413	2023-10-02	1
-159	65744	2023-10-02	10
-160	52042	2023-10-02	10
-161	51097	2023-10-02	10
-162	65599	2023-10-02	10
-163	47596	2023-10-02	10
-164	58944	2023-10-02	10
-225	1877	2023-10-03	14
-226	1663	2023-10-03	4
-165	475	2023-11-02	1
-166	1376	2023-11-02	1
-227	1596	2023-11-03	1
-228	667	2023-11-03	1
-229	2372	2023-11-03	1
-167	160	2023-12-02	1
-168	5447	2023-12-02	1
-169	15137	2023-12-02	2
-170	2430	2023-12-02	4
-230	201	2023-12-03	1
-231	1448	2023-12-03	1
-171	201	2024-01-02	1
-172	2101	2024-01-02	1
-173	39017	2024-01-02	2
-232	1189	2024-01-03	1
-233	386	2024-01-03	1
-234	6653	2024-01-03	1
-279	1788	2024-01-04	1
-280	5382	2024-01-04	2
-281	4025	2024-02-04	1
-282	1548	2024-02-04	1
-283	4716	2024-02-04	1
-284	5537	2024-02-04	2
-285	402	2024-02-04	3
-286	402	2024-02-04	3
-287	402	2024-02-04	3
-288	402	2024-02-04	3
-289	402	2024-02-04	3
-290	402	2024-02-04	3
-291	4058	2024-03-04	11
-292	1973	2024-03-04	11
-293	93	2024-03-04	1
-294	69806	2024-03-04	10
-295	61257	2024-03-04	10
-296	49951	2024-03-04	10
-297	54246	2024-03-04	10
-298	47055	2024-03-04	10
-299	60425	2024-03-04	10
-235	3154	2024-04-03	2
-236	1944	2024-04-03	1
-237	140	2024-04-03	1
-238	9692	2024-04-03	8
-239	8613	2024-04-03	8
-240	11149	2024-04-03	8
-241	1489	2024-04-03	8
-242	17005	2024-04-03	9
-243	16650	2024-04-03	9
-244	14728	2024-04-03	9
-300	1688	2024-04-04	1
-301	21331	2024-04-04	8
-302	15766	2024-04-04	8
-245	1595	2024-05-03	2
-246	2399	2024-05-03	6
-247	69806	2024-05-03	10
-248	54959	2024-05-03	10
-249	49951	2024-05-03	10
-250	54246	2024-05-03	10
-251	46155	2024-05-03	10
-252	57505	2024-05-03	10
-303	1688	2024-05-04	1
-253	2054	2024-06-03	11
-254	1020	2024-06-03	11
-255	909	2024-07-03	1
-256	341	2024-07-03	1
-257	1028	2024-07-03	1
-258	713	2024-07-03	1
-\.
+ALTER TABLE ONLY despesa
+    ADD CONSTRAINT despesa_pkey PRIMARY KEY (id_despesa);
+
+ALTER TABLE ONLY item
+    ADD CONSTRAINT item_pkey PRIMARY KEY (id_item);
+
+
+ALTER TABLE ONLY natureza
+    ADD CONSTRAINT natureza_pkey PRIMARY KEY (id_natureza);
+
+
+
+ALTER TABLE ONLY partido
+    ADD CONSTRAINT partido_pkey PRIMARY KEY (id_partido);
+
+
+ALTER TABLE ONLY partido_presidente
+    ADD CONSTRAINT partido_presidente_pkey PRIMARY KEY (id_partido_presidente);
+
+ALTER TABLE ONLY presidente
+    ADD CONSTRAINT presidente_pkey PRIMARY KEY (id_presidente);
+
+
+ALTER TABLE ONLY despesa
+    ADD CONSTRAINT despesa_id_item_fkey FOREIGN KEY (id_item) REFERENCES item(id_item);
+
+
+ALTER TABLE ONLY item
+    ADD CONSTRAINT item_id_natureza_fkey FOREIGN KEY (id_natureza) REFERENCES natureza(id_natureza);
+
+
+ALTER TABLE ONLY partido_presidente
+    ADD CONSTRAINT partido_presidente_id_despesa_fkey FOREIGN KEY (id_despesa) REFERENCES despesa(id_despesa);
+
+
+ALTER TABLE ONLY partido_presidente
+    ADD CONSTRAINT partido_presidente_id_partido_fkey FOREIGN KEY (id_partido) REFERENCES partido(id_partido);
+
+
+ALTER TABLE ONLY partido_presidente
+    ADD CONSTRAINT partido_presidente_id_presidente_fkey FOREIGN KEY (id_presidente) REFERENCES presidente(id_presidente);
+
+
+
+INSERT INTO tp2.natureza (id_natureza, nom_natureza) VALUES (1, 'DIARIAS - PESSOAL CIVIL');
+INSERT INTO tp2.natureza (id_natureza, nom_natureza) VALUES (2, 'MATERIAL DE CONSUMO');
+INSERT INTO tp2.natureza (id_natureza, nom_natureza) VALUES (3, 'OBRIGACOES TRIBUTARIAS E CONTRIBUTIVAS');
+INSERT INTO tp2.natureza (id_natureza, nom_natureza) VALUES (4, 'OUTROS SERVICOS DE TERCEIROS - PESSOA JURIDICA');
+INSERT INTO tp2.natureza (id_natureza, nom_natureza) VALUES (5, 'PASSAGENS E DESPESAS COM LOCOMOCAO');
+INSERT INTO tp2.natureza (id_natureza, nom_natureza) VALUES (6, 'VENCIMENTOS E VANTAGENS FIXAS - PESSOAL CIVIL');
+INSERT INTO tp2.natureza (id_natureza, nom_natureza) VALUES (7, 'VALOR DE ESCAPE – SIAFIWEB');
+INSERT INTO tp2.natureza (id_natureza, nom_natureza) VALUES (8, 'SERVICOS DE TECNOLOGIA DA INFORMACAO E COMUNICACAO – PJ');
 
 
 --
 -- Data for Name: item; Type: TABLE DATA; Schema: tp2; Owner: postgres
 --
 
-COPY item (id_item, nom_item, id_natureza) FROM stdin;
-1	DIARIAS NO PAIS	1
-2	DIARIAS NO EXTERIOR	1
-3	TAXAS	3
-4	COMBUSTIVEIS E LUBRIFICANTES AUTOMOTIVOS	2
-5	SERVICOS DE TELECOMUNICACOES	4
-6	SEGUROS EM GERAL	4
-7	MANUTENCAO E CONSERV. DE VEICULOS	4
-8	PASSAGENS PARA O PAIS	5
-9	PASSAGENS PARA O EXTERIOR	5
-10	GRATIFICACAO P/EXERCICIO DE CARGO EM COMISSAO	6
-11	VALOR DE ESCAPE - SIAFIWEB	7
-12	MATERIAL P/ MANUTENCAO DE VEICULOS	2
-13	TELEFONIA FIXA E MOVEL - PACOTE DE COMUNICACAO DE DADOS	8
-14	LOCACAO DE MEIOS DE TRANSPORTE	5
-\.
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (1, 'DIARIAS NO PAIS', 1);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (2, 'DIARIAS NO EXTERIOR', 1);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (3, 'TAXAS', 3);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (4, 'COMBUSTIVEIS E LUBRIFICANTES AUTOMOTIVOS', 2);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (5, 'SERVICOS DE TELECOMUNICACOES', 4);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (6, 'SEGUROS EM GERAL', 4);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (7, 'MANUTENCAO E CONSERV. DE VEICULOS', 4);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (8, 'PASSAGENS PARA O PAIS', 5);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (9, 'PASSAGENS PARA O EXTERIOR', 5);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (10, 'GRATIFICACAO P/EXERCICIO DE CARGO EM COMISSAO', 6);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (11, 'VALOR DE ESCAPE - SIAFIWEB', 7);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (12, 'MATERIAL P/ MANUTENCAO DE VEICULOS', 2);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (13, 'TELEFONIA FIXA E MOVEL - PACOTE DE COMUNICACAO DE DADOS', 8);
+INSERT INTO tp2.item (id_item, nom_item, id_natureza) VALUES (14, 'LOCACAO DE MEIOS DE TRANSPORTE', 5);
 
 
 --
--- Data for Name: natureza; Type: TABLE DATA; Schema: tp2; Owner: postgres
+-- Data for Name: despesa; Type: TABLE DATA; Schema: tp2; Owner: postgres
 --
 
-COPY natureza (id_natureza, nom_natureza) FROM stdin;
-1	DIARIAS - PESSOAL CIVIL
-2	MATERIAL DE CONSUMO
-3	OBRIGACOES TRIBUTARIAS E CONTRIBUTIVAS
-4	OUTROS SERVICOS DE TERCEIROS - PESSOA JURIDICA
-5	PASSAGENS E DESPESAS COM LOCOMOCAO
-6	VENCIMENTOS E VANTAGENS FIXAS - PESSOAL CIVIL
-7	VALOR DE ESCAPE – SIAFIWEB
-8	SERVICOS DE TECNOLOGIA DA INFORMACAO E COMUNICACAO – PJ
-\.
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (259, 341, '2022-01-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (260, 824, '2022-01-04', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (261, 1052, '2022-01-04', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (262, 2877, '2022-01-04', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (263, 1145, '2022-01-04', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (174, 7026, '2022-02-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (175, 15415, '2022-02-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (176, 5222, '2022-02-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (177, 2403, '2022-02-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (178, 184, '2022-03-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (179, 1271, '2022-03-03', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (180, 395, '2022-03-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (181, 1246, '2022-03-03', 9);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (182, 566, '2022-04-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (183, 432, '2022-04-03', 7);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (184, 1380, '2022-04-03', 7);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (185, 967, '2022-04-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (186, 102, '2022-04-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (187, 1476, '2022-07-03', 12);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (53, 1824, '2022-08-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (54, 156, '2022-08-02', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (55, 312, '2022-08-02', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (56, 78, '2022-08-02', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (57, 78, '2022-08-02', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (58, 156, '2022-08-02', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (59, 78, '2022-08-02', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (188, 1968, '2022-08-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (264, 156, '2022-08-04', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (265, 234, '2022-08-04', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (266, 156, '2022-08-04', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (267, 156, '2022-08-04', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (268, 17410, '2022-08-04', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (269, 39314, '2022-08-04', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (270, 28126, '2022-08-04', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (271, 5490, '2022-08-04', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (272, 1198, '2022-08-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (273, 702, '2022-08-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (274, 446, '2022-08-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (60, 1637, '2022-09-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (189, 800, '2022-09-03', 12);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (1, 2377, '2022-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (2, 1404, '2022-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (3, 1297, '2022-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (4, 70, '2022-10-01', 7);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (9, 2378, '2023-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (10, 1405, '2023-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (11, 1298, '2023-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (12, 71, '2023-10-01', 7);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (17, 2379, '2024-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (18, 1406, '2024-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (19, 1299, '2024-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (20, 72, '2024-10-01', 7);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (25, 2380, '2025-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (26, 1407, '2025-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (27, 1300, '2025-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (28, 73, '2025-10-01', 7);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (33, 2381, '2026-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (34, 1408, '2026-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (35, 1301, '2026-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (36, 74, '2026-10-01', 7);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (41, 2382, '2027-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (42, 1409, '2027-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (43, 1302, '2027-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (44, 75, '2027-10-01', 7);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (49, 2383, '2028-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (50, 1410, '2028-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (51, 1303, '2028-10-01', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (52, 76, '2028-10-01', 7);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (61, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (62, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (63, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (64, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (65, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (66, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (67, 265, '2022-10-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (68, 368, '2022-10-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (69, 1548, '2022-10-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (70, 265, '2022-10-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (71, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (72, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (73, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (74, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (75, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (76, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (77, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (78, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (79, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (80, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (81, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (82, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (83, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (84, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (85, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (86, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (87, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (88, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (89, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (90, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (91, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (92, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (93, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (94, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (95, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (96, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (97, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (98, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (99, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (100, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (101, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (102, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (103, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (104, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (105, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (106, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (107, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (108, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (109, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (110, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (111, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (112, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (113, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (114, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (115, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (116, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (117, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (118, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (119, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (120, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (121, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (122, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (123, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (124, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (125, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (126, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (127, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (128, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (129, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (130, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (131, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (132, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (133, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (134, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (135, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (136, 150, '2022-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (190, 156, '2022-10-03', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (191, 312, '2022-10-03', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (192, 78, '2022-10-03', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (193, 78, '2022-10-03', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (194, 156, '2022-10-03', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (195, 78, '2022-10-03', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (196, 997, '2022-10-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (197, 713, '2022-10-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (198, 156, '2022-10-03', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (199, 312, '2022-10-03', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (200, 78, '2022-10-03', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (201, 78, '2022-10-03', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (202, 156, '2022-10-03', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (203, 78, '2022-10-03', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (5, 465, '2022-11-01', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (6, 177, '2022-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (7, 298, '2022-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (8, 88, '2022-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (13, 466, '2023-11-01', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (14, 178, '2023-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (15, 299, '2023-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (16, 89, '2023-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (21, 467, '2024-11-01', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (22, 179, '2024-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (23, 300, '2024-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (24, 90, '2024-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (29, 468, '2025-11-01', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (30, 180, '2025-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (31, 301, '2025-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (32, 91, '2025-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (37, 469, '2026-11-01', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (38, 181, '2026-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (39, 302, '2026-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (40, 92, '2026-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (45, 470, '2027-11-01', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (46, 182, '2027-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (47, 303, '2027-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (48, 93, '2027-11-01', 13);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (137, 156, '2022-11-02', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (138, 312, '2022-11-02', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (139, 78, '2022-11-02', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (140, 78, '2022-11-02', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (141, 156, '2022-11-02', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (142, 78, '2022-11-02', 5);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (204, 1601, '2022-11-03', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (205, 275, '2022-11-03', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (206, 266, '2022-11-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (207, 5523, '2022-11-03', 2);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (275, 3379, '2022-11-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (276, 339, '2023-01-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (143, 3796, '2023-02-02', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (144, 398, '2023-02-02', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (208, 2701, '2023-02-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (209, 2067, '2023-02-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (210, 7978, '2023-02-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (211, 18682, '2023-02-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (212, 5750, '2023-02-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (213, 6099, '2023-02-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (214, 18811, '2023-02-03', 9);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (215, 112, '2023-02-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (216, 52, '2023-02-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (277, 2430, '2023-02-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (145, 5407, '2023-03-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (217, 3044, '2023-03-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (218, 102, '2023-03-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (146, 2443, '2023-04-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (219, 797, '2023-04-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (220, 1153, '2023-04-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (147, 201, '2023-05-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (148, 2247, '2023-05-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (221, 1037, '2023-05-03', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (149, 6451, '2023-06-02', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (150, 30189, '2023-06-02', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (151, 5818, '2023-06-02', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (152, 3616, '2023-06-02', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (153, 13768, '2023-06-02', 9);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (222, 2772, '2023-06-03', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (223, 1717, '2023-06-03', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (278, 2738, '2023-06-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (154, 4368, '2023-09-02', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (224, 18568, '2023-09-03', 2);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (155, 1065, '2023-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (156, 3044, '2023-10-02', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (157, 189, '2023-10-02', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (158, 413, '2023-10-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (159, 65744, '2023-10-02', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (160, 52042, '2023-10-02', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (161, 51097, '2023-10-02', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (162, 65599, '2023-10-02', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (163, 47596, '2023-10-02', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (164, 58944, '2023-10-02', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (225, 1877, '2023-10-03', 14);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (226, 1663, '2023-10-03', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (165, 475, '2023-11-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (166, 1376, '2023-11-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (227, 1596, '2023-11-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (228, 667, '2023-11-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (229, 2372, '2023-11-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (167, 160, '2023-12-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (168, 5447, '2023-12-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (169, 15137, '2023-12-02', 2);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (170, 2430, '2023-12-02', 4);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (230, 201, '2023-12-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (231, 1448, '2023-12-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (171, 201, '2024-01-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (172, 2101, '2024-01-02', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (173, 39017, '2024-01-02', 2);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (232, 1189, '2024-01-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (233, 386, '2024-01-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (234, 6653, '2024-01-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (279, 1788, '2024-01-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (280, 5382, '2024-01-04', 2);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (281, 4025, '2024-02-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (282, 1548, '2024-02-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (283, 4716, '2024-02-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (284, 5537, '2024-02-04', 2);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (285, 402, '2024-02-04', 3);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (286, 402, '2024-02-04', 3);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (287, 402, '2024-02-04', 3);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (288, 402, '2024-02-04', 3);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (289, 402, '2024-02-04', 3);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (290, 402, '2024-02-04', 3);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (291, 4058, '2024-03-04', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (292, 1973, '2024-03-04', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (293, 93, '2024-03-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (294, 69806, '2024-03-04', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (295, 61257, '2024-03-04', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (296, 49951, '2024-03-04', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (297, 54246, '2024-03-04', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (298, 47055, '2024-03-04', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (299, 60425, '2024-03-04', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (235, 3154, '2024-04-03', 2);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (236, 1944, '2024-04-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (237, 140, '2024-04-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (238, 9692, '2024-04-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (239, 8613, '2024-04-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (240, 11149, '2024-04-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (241, 1489, '2024-04-03', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (242, 17005, '2024-04-03', 9);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (243, 16650, '2024-04-03', 9);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (244, 14728, '2024-04-03', 9);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (300, 1688, '2024-04-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (301, 21331, '2024-04-04', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (302, 15766, '2024-04-04', 8);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (245, 1595, '2024-05-03', 2);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (246, 2399, '2024-05-03', 6);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (247, 69806, '2024-05-03', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (248, 54959, '2024-05-03', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (249, 49951, '2024-05-03', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (250, 54246, '2024-05-03', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (251, 46155, '2024-05-03', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (252, 57505, '2024-05-03', 10);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (303, 1688, '2024-05-04', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (253, 2054, '2024-06-03', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (254, 1020, '2024-06-03', 11);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (255, 909, '2024-07-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (256, 341, '2024-07-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (257, 1028, '2024-07-03', 1);
+INSERT INTO tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (258, 713, '2024-07-03', 1);
 
 
 --
 -- Data for Name: partido; Type: TABLE DATA; Schema: tp2; Owner: postgres
 --
 
-COPY partido (id_partido, nom_partido, sigla) FROM stdin;
-14	Partido Trabalhista Brasileiro	PTB
-13	Partido dos Trabalhadores	PT
-45	Partido da Social Democracia Brasileira	PDSB
-15	Movimento Democrático Brasileiro	MDB
-90	Partido Republicano da Ordem Social	PROS
-\.
-
-
---
--- Data for Name: partido_presidente; Type: TABLE DATA; Schema: tp2; Owner: postgres
---
-
-COPY partido_presidente (id_partido_presidente, id_partido, id_presidente, id_despesa) FROM stdin;
-\.
+INSERT INTO tp2.partido (id_partido, nom_partido, sigla) VALUES (14, 'Partido Trabalhista Brasileiro', 'PTB');
+INSERT INTO tp2.partido (id_partido, nom_partido, sigla) VALUES (13, 'Partido dos Trabalhadores', 'PT');
+INSERT INTO tp2.partido (id_partido, nom_partido, sigla) VALUES (45, 'Partido da Social Democracia Brasileira', 'PDSB');
+INSERT INTO tp2.partido (id_partido, nom_partido, sigla) VALUES (15, 'Movimento Democrático Brasileiro', 'MDB');
+INSERT INTO tp2.partido (id_partido, nom_partido, sigla) VALUES (90, 'Partido Republicano da Ordem Social', 'PROS');
 
 
 --
 -- Data for Name: presidente; Type: TABLE DATA; Schema: tp2; Owner: postgres
 --
 
-COPY presidente (id_presidente, nom_presidente, num_mandato) FROM stdin;
-1	DILMA ROUSSEFF	2
-2	FERNANDO COLLOR	1
-3	FERNANDO HENRIQUE	2
-4	JOSE SARNEY	1
-5	LULA DA SILVA	2
-6	MICHEL TEMER	1
-\.
-
-
---
--- Name: despesa_id_despesa_seq; Type: SEQUENCE SET; Schema: tp2; Owner: postgres
---
-
-SELECT pg_catalog.setval('despesa_id_despesa_seq', 1, false);
-
-
---
--- Name: item_id_item_seq; Type: SEQUENCE SET; Schema: tp2; Owner: postgres
---
-
-SELECT pg_catalog.setval('item_id_item_seq', 1, false);
-
-
---
--- Name: natureza_id_natureza_seq; Type: SEQUENCE SET; Schema: tp2; Owner: postgres
---
-
-SELECT pg_catalog.setval('natureza_id_natureza_seq', 1, false);
-
-
---
--- Name: partido_id_partido_seq; Type: SEQUENCE SET; Schema: tp2; Owner: postgres
---
-
-SELECT pg_catalog.setval('partido_id_partido_seq', 1, false);
-
-
---
--- Name: partido_presidente_id_partido_presidente_seq; Type: SEQUENCE SET; Schema: tp2; Owner: postgres
---
-
-SELECT pg_catalog.setval('partido_presidente_id_partido_presidente_seq', 1, true);
-
-
---
--- Name: presidente_id_presidente_seq; Type: SEQUENCE SET; Schema: tp2; Owner: postgres
---
-
-SELECT pg_catalog.setval('presidente_id_presidente_seq', 1, false);
-
-
---
--- Name: despesa despesa_pkey; Type: CONSTRAINT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY despesa
-    ADD CONSTRAINT despesa_pkey PRIMARY KEY (id_despesa);
-
-
---
--- Name: item item_pkey; Type: CONSTRAINT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY item
-    ADD CONSTRAINT item_pkey PRIMARY KEY (id_item);
-
-
---
--- Name: natureza natureza_pkey; Type: CONSTRAINT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY natureza
-    ADD CONSTRAINT natureza_pkey PRIMARY KEY (id_natureza);
-
-
---
--- Name: partido partido_pkey; Type: CONSTRAINT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY partido
-    ADD CONSTRAINT partido_pkey PRIMARY KEY (id_partido);
-
-
---
--- Name: partido_presidente partido_presidente_pkey; Type: CONSTRAINT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY partido_presidente
-    ADD CONSTRAINT partido_presidente_pkey PRIMARY KEY (id_partido_presidente);
-
-
---
--- Name: presidente presidente_pkey; Type: CONSTRAINT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY presidente
-    ADD CONSTRAINT presidente_pkey PRIMARY KEY (id_presidente);
-
-
---
--- Name: despesa despesa_id_item_fkey; Type: FK CONSTRAINT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY despesa
-    ADD CONSTRAINT despesa_id_item_fkey FOREIGN KEY (id_item) REFERENCES item(id_item);
-
-
---
--- Name: item item_id_natureza_fkey; Type: FK CONSTRAINT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY item
-    ADD CONSTRAINT item_id_natureza_fkey FOREIGN KEY (id_natureza) REFERENCES natureza(id_natureza);
-
-
---
--- Name: partido_presidente partido_presidente_id_despesa_fkey; Type: FK CONSTRAINT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY partido_presidente
-    ADD CONSTRAINT partido_presidente_id_despesa_fkey FOREIGN KEY (id_despesa) REFERENCES despesa(id_despesa);
-
-
---
--- Name: partido_presidente partido_presidente_id_partido_fkey; Type: FK CONSTRAINT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY partido_presidente
-    ADD CONSTRAINT partido_presidente_id_partido_fkey FOREIGN KEY (id_partido) REFERENCES partido(id_partido);
-
-
---
--- Name: partido_presidente partido_presidente_id_presidente_fkey; Type: FK CONSTRAINT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY partido_presidente
-    ADD CONSTRAINT partido_presidente_id_presidente_fkey FOREIGN KEY (id_presidente) REFERENCES presidente(id_presidente);
-
-
---
--- PostgreSQL database dump complete
---
-
+INSERT INTO tp2.presidente (id_presidente, nom_presidente, num_mandato) VALUES (1, 'DILMA ROUSSEFF', '2');
+INSERT INTO tp2.presidente (id_presidente, nom_presidente, num_mandato) VALUES (2, 'FERNANDO COLLOR', '1');
+INSERT INTO tp2.presidente (id_presidente, nom_presidente, num_mandato) VALUES (3, 'FERNANDO HENRIQUE', '2');
+INSERT INTO tp2.presidente (id_presidente, nom_presidente, num_mandato) VALUES (4, 'JOSE SARNEY', '1');
+INSERT INTO tp2.presidente (id_presidente, nom_presidente, num_mandato) VALUES (5, 'LULA DA SILVA', '2');
+INSERT INTO tp2.presidente (id_presidente, nom_presidente, num_mandato) VALUES (6, 'MICHEL TEMER', '1');
