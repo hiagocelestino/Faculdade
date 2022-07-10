@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS partido (
     sigla character varying(255)
 );
 
-CREATE TABLE NOT EXISTS partido_presidente (
+CREATE TABLE IF NOT EXISTS partido_presidente (
     id_partido_presidente integer NOT NULL,
     id_partido integer,
     id_presidente integer,
