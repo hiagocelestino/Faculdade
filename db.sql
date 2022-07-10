@@ -1,292 +1,41 @@
---
--- PostgreSQL database dump
---
-
--- Dumped from database version 12.11 (Ubuntu 12.11-1.pgdg20.04+1)
--- Dumped by pg_dump version 14.4 (Ubuntu 14.4-1.pgdg20.04+1)
-
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
-SET check_function_bodies = false;
-SET xmloption = content;
-SET client_min_messages = warning;
-SET row_security = off;
-
---
--- Name: tp2; Type: SCHEMA; Schema: -; Owner: postgres
---
-
-CREATE SCHEMA tp2;
-
-
-ALTER SCHEMA tp2 OWNER TO postgres;
-
-SET default_tablespace = '';
-
-SET default_table_access_method = heap;
-
---
--- Name: despesa; Type: TABLE; Schema: tp2; Owner: postgres
---
-
-CREATE TABLE tp2.despesa (
+CREATE TABLE despesa (
     id_despesa integer NOT NULL,
     vlr_despesa integer,
     dat_compra date,
     id_item integer
 );
 
-
-ALTER TABLE tp2.despesa OWNER TO postgres;
-
---
--- Name: despesa_id_despesa_seq; Type: SEQUENCE; Schema: tp2; Owner: postgres
---
-
-CREATE SEQUENCE tp2.despesa_id_despesa_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE tp2.despesa_id_despesa_seq OWNER TO postgres;
-
---
--- Name: despesa_id_despesa_seq; Type: SEQUENCE OWNED BY; Schema: tp2; Owner: postgres
---
-
-ALTER SEQUENCE tp2.despesa_id_despesa_seq OWNED BY tp2.despesa.id_despesa;
-
-
---
--- Name: item; Type: TABLE; Schema: tp2; Owner: postgres
---
-
-CREATE TABLE tp2.item (
+CREATE TABLE item (
     id_item integer NOT NULL,
     nom_item character varying(255),
     id_natureza integer
 );
 
-
-ALTER TABLE tp2.item OWNER TO postgres;
-
---
--- Name: item_id_item_seq; Type: SEQUENCE; Schema: tp2; Owner: postgres
---
-
-CREATE SEQUENCE tp2.item_id_item_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE tp2.item_id_item_seq OWNER TO postgres;
-
---
--- Name: item_id_item_seq; Type: SEQUENCE OWNED BY; Schema: tp2; Owner: postgres
---
-
-ALTER SEQUENCE tp2.item_id_item_seq OWNED BY tp2.item.id_item;
-
-
---
--- Name: natureza; Type: TABLE; Schema: tp2; Owner: postgres
---
-
-CREATE TABLE tp2.natureza (
+CREATE TABLE natureza (
     id_natureza integer NOT NULL,
     nom_natureza character varying(255)
 );
 
-
-ALTER TABLE tp2.natureza OWNER TO postgres;
-
---
--- Name: natureza_id_natureza_seq; Type: SEQUENCE; Schema: tp2; Owner: postgres
---
-
-CREATE SEQUENCE tp2.natureza_id_natureza_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE tp2.natureza_id_natureza_seq OWNER TO postgres;
-
---
--- Name: natureza_id_natureza_seq; Type: SEQUENCE OWNED BY; Schema: tp2; Owner: postgres
---
-
-ALTER SEQUENCE tp2.natureza_id_natureza_seq OWNED BY tp2.natureza.id_natureza;
-
-
---
--- Name: partido; Type: TABLE; Schema: tp2; Owner: postgres
---
-
-CREATE TABLE tp2.partido (
+CREATE TABLE partido (
     id_partido integer NOT NULL,
     nom_partido character varying(255),
     sigla character varying(255)
 );
 
-
-ALTER TABLE tp2.partido OWNER TO postgres;
-
---
--- Name: partido_id_partido_seq; Type: SEQUENCE; Schema: tp2; Owner: postgres
---
-
-CREATE SEQUENCE tp2.partido_id_partido_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE tp2.partido_id_partido_seq OWNER TO postgres;
-
---
--- Name: partido_id_partido_seq; Type: SEQUENCE OWNED BY; Schema: tp2; Owner: postgres
---
-
-ALTER SEQUENCE tp2.partido_id_partido_seq OWNED BY tp2.partido.id_partido;
-
-
---
--- Name: partido_presidente; Type: TABLE; Schema: tp2; Owner: postgres
---
-
-CREATE TABLE tp2.partido_presidente (
+CREATE TABLE partido_presidente (
     id_partido_presidente integer NOT NULL,
     id_partido integer,
     id_presidente integer,
     id_despesa integer
 );
 
-
-ALTER TABLE tp2.partido_presidente OWNER TO postgres;
-
---
--- Name: partido_presidente_id_partido_presidente_seq; Type: SEQUENCE; Schema: tp2; Owner: postgres
---
-
-CREATE SEQUENCE tp2.partido_presidente_id_partido_presidente_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE tp2.partido_presidente_id_partido_presidente_seq OWNER TO postgres;
-
---
--- Name: partido_presidente_id_partido_presidente_seq; Type: SEQUENCE OWNED BY; Schema: tp2; Owner: postgres
---
-
-ALTER SEQUENCE tp2.partido_presidente_id_partido_presidente_seq OWNED BY tp2.partido_presidente.id_partido_presidente;
-
-
---
--- Name: presidente; Type: TABLE; Schema: tp2; Owner: postgres
---
-
-CREATE TABLE tp2.presidente (
+CREATE TABLE presidente (
     id_presidente integer NOT NULL,
     nom_presidente character varying(255),
     num_mandato character varying(255)
 );
 
-
-ALTER TABLE tp2.presidente OWNER TO postgres;
-
---
--- Name: presidente_id_presidente_seq; Type: SEQUENCE; Schema: tp2; Owner: postgres
---
-
-CREATE SEQUENCE tp2.presidente_id_presidente_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE tp2.presidente_id_presidente_seq OWNER TO postgres;
-
---
--- Name: presidente_id_presidente_seq; Type: SEQUENCE OWNED BY; Schema: tp2; Owner: postgres
---
-
-ALTER SEQUENCE tp2.presidente_id_presidente_seq OWNED BY tp2.presidente.id_presidente;
-
-
---
--- Name: despesa id_despesa; Type: DEFAULT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY tp2.despesa ALTER COLUMN id_despesa SET DEFAULT nextval('tp2.despesa_id_despesa_seq'::regclass);
-
-
---
--- Name: item id_item; Type: DEFAULT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY tp2.item ALTER COLUMN id_item SET DEFAULT nextval('tp2.item_id_item_seq'::regclass);
-
-
---
--- Name: natureza id_natureza; Type: DEFAULT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY tp2.natureza ALTER COLUMN id_natureza SET DEFAULT nextval('tp2.natureza_id_natureza_seq'::regclass);
-
-
---
--- Name: partido id_partido; Type: DEFAULT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY tp2.partido ALTER COLUMN id_partido SET DEFAULT nextval('tp2.partido_id_partido_seq'::regclass);
-
-
---
--- Name: partido_presidente id_partido_presidente; Type: DEFAULT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY tp2.partido_presidente ALTER COLUMN id_partido_presidente SET DEFAULT nextval('tp2.partido_presidente_id_partido_presidente_seq'::regclass);
-
-
---
--- Name: presidente id_presidente; Type: DEFAULT; Schema: tp2; Owner: postgres
---
-
-ALTER TABLE ONLY tp2.presidente ALTER COLUMN id_presidente SET DEFAULT nextval('tp2.presidente_id_presidente_seq'::regclass);
-
-
---
--- Data for Name: despesa; Type: TABLE DATA; Schema: tp2; Owner: postgres
---
-
-COPY tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) FROM stdin;
+COPY despesa (id_despesa, vlr_despesa, dat_compra, id_item) FROM stdin;
 259	341	2022-01-04	1
 260	824	2022-01-04	6
 261	1052	2022-01-04	6
@@ -597,7 +346,7 @@ COPY tp2.despesa (id_despesa, vlr_despesa, dat_compra, id_item) FROM stdin;
 -- Data for Name: item; Type: TABLE DATA; Schema: tp2; Owner: postgres
 --
 
-COPY tp2.item (id_item, nom_item, id_natureza) FROM stdin;
+COPY item (id_item, nom_item, id_natureza) FROM stdin;
 1	DIARIAS NO PAIS	1
 2	DIARIAS NO EXTERIOR	1
 3	TAXAS	3
@@ -619,7 +368,7 @@ COPY tp2.item (id_item, nom_item, id_natureza) FROM stdin;
 -- Data for Name: natureza; Type: TABLE DATA; Schema: tp2; Owner: postgres
 --
 
-COPY tp2.natureza (id_natureza, nom_natureza) FROM stdin;
+COPY natureza (id_natureza, nom_natureza) FROM stdin;
 1	DIARIAS - PESSOAL CIVIL
 2	MATERIAL DE CONSUMO
 3	OBRIGACOES TRIBUTARIAS E CONTRIBUTIVAS
@@ -635,7 +384,7 @@ COPY tp2.natureza (id_natureza, nom_natureza) FROM stdin;
 -- Data for Name: partido; Type: TABLE DATA; Schema: tp2; Owner: postgres
 --
 
-COPY tp2.partido (id_partido, nom_partido, sigla) FROM stdin;
+COPY partido (id_partido, nom_partido, sigla) FROM stdin;
 14	Partido Trabalhista Brasileiro	PTB
 13	Partido dos Trabalhadores	PT
 45	Partido da Social Democracia Brasileira	PDSB
@@ -648,7 +397,7 @@ COPY tp2.partido (id_partido, nom_partido, sigla) FROM stdin;
 -- Data for Name: partido_presidente; Type: TABLE DATA; Schema: tp2; Owner: postgres
 --
 
-COPY tp2.partido_presidente (id_partido_presidente, id_partido, id_presidente, id_despesa) FROM stdin;
+COPY partido_presidente (id_partido_presidente, id_partido, id_presidente, id_despesa) FROM stdin;
 \.
 
 
@@ -656,7 +405,7 @@ COPY tp2.partido_presidente (id_partido_presidente, id_partido, id_presidente, i
 -- Data for Name: presidente; Type: TABLE DATA; Schema: tp2; Owner: postgres
 --
 
-COPY tp2.presidente (id_presidente, nom_presidente, num_mandato) FROM stdin;
+COPY presidente (id_presidente, nom_presidente, num_mandato) FROM stdin;
 1	DILMA ROUSSEFF	2
 2	FERNANDO COLLOR	1
 3	FERNANDO HENRIQUE	2
@@ -670,49 +419,49 @@ COPY tp2.presidente (id_presidente, nom_presidente, num_mandato) FROM stdin;
 -- Name: despesa_id_despesa_seq; Type: SEQUENCE SET; Schema: tp2; Owner: postgres
 --
 
-SELECT pg_catalog.setval('tp2.despesa_id_despesa_seq', 1, false);
+SELECT pg_catalog.setval('despesa_id_despesa_seq', 1, false);
 
 
 --
 -- Name: item_id_item_seq; Type: SEQUENCE SET; Schema: tp2; Owner: postgres
 --
 
-SELECT pg_catalog.setval('tp2.item_id_item_seq', 1, false);
+SELECT pg_catalog.setval('item_id_item_seq', 1, false);
 
 
 --
 -- Name: natureza_id_natureza_seq; Type: SEQUENCE SET; Schema: tp2; Owner: postgres
 --
 
-SELECT pg_catalog.setval('tp2.natureza_id_natureza_seq', 1, false);
+SELECT pg_catalog.setval('natureza_id_natureza_seq', 1, false);
 
 
 --
 -- Name: partido_id_partido_seq; Type: SEQUENCE SET; Schema: tp2; Owner: postgres
 --
 
-SELECT pg_catalog.setval('tp2.partido_id_partido_seq', 1, false);
+SELECT pg_catalog.setval('partido_id_partido_seq', 1, false);
 
 
 --
 -- Name: partido_presidente_id_partido_presidente_seq; Type: SEQUENCE SET; Schema: tp2; Owner: postgres
 --
 
-SELECT pg_catalog.setval('tp2.partido_presidente_id_partido_presidente_seq', 1, true);
+SELECT pg_catalog.setval('partido_presidente_id_partido_presidente_seq', 1, true);
 
 
 --
 -- Name: presidente_id_presidente_seq; Type: SEQUENCE SET; Schema: tp2; Owner: postgres
 --
 
-SELECT pg_catalog.setval('tp2.presidente_id_presidente_seq', 1, false);
+SELECT pg_catalog.setval('presidente_id_presidente_seq', 1, false);
 
 
 --
 -- Name: despesa despesa_pkey; Type: CONSTRAINT; Schema: tp2; Owner: postgres
 --
 
-ALTER TABLE ONLY tp2.despesa
+ALTER TABLE ONLY despesa
     ADD CONSTRAINT despesa_pkey PRIMARY KEY (id_despesa);
 
 
@@ -720,7 +469,7 @@ ALTER TABLE ONLY tp2.despesa
 -- Name: item item_pkey; Type: CONSTRAINT; Schema: tp2; Owner: postgres
 --
 
-ALTER TABLE ONLY tp2.item
+ALTER TABLE ONLY item
     ADD CONSTRAINT item_pkey PRIMARY KEY (id_item);
 
 
@@ -728,7 +477,7 @@ ALTER TABLE ONLY tp2.item
 -- Name: natureza natureza_pkey; Type: CONSTRAINT; Schema: tp2; Owner: postgres
 --
 
-ALTER TABLE ONLY tp2.natureza
+ALTER TABLE ONLY natureza
     ADD CONSTRAINT natureza_pkey PRIMARY KEY (id_natureza);
 
 
@@ -736,7 +485,7 @@ ALTER TABLE ONLY tp2.natureza
 -- Name: partido partido_pkey; Type: CONSTRAINT; Schema: tp2; Owner: postgres
 --
 
-ALTER TABLE ONLY tp2.partido
+ALTER TABLE ONLY partido
     ADD CONSTRAINT partido_pkey PRIMARY KEY (id_partido);
 
 
@@ -744,7 +493,7 @@ ALTER TABLE ONLY tp2.partido
 -- Name: partido_presidente partido_presidente_pkey; Type: CONSTRAINT; Schema: tp2; Owner: postgres
 --
 
-ALTER TABLE ONLY tp2.partido_presidente
+ALTER TABLE ONLY partido_presidente
     ADD CONSTRAINT partido_presidente_pkey PRIMARY KEY (id_partido_presidente);
 
 
@@ -752,7 +501,7 @@ ALTER TABLE ONLY tp2.partido_presidente
 -- Name: presidente presidente_pkey; Type: CONSTRAINT; Schema: tp2; Owner: postgres
 --
 
-ALTER TABLE ONLY tp2.presidente
+ALTER TABLE ONLY presidente
     ADD CONSTRAINT presidente_pkey PRIMARY KEY (id_presidente);
 
 
@@ -760,40 +509,40 @@ ALTER TABLE ONLY tp2.presidente
 -- Name: despesa despesa_id_item_fkey; Type: FK CONSTRAINT; Schema: tp2; Owner: postgres
 --
 
-ALTER TABLE ONLY tp2.despesa
-    ADD CONSTRAINT despesa_id_item_fkey FOREIGN KEY (id_item) REFERENCES tp2.item(id_item);
+ALTER TABLE ONLY despesa
+    ADD CONSTRAINT despesa_id_item_fkey FOREIGN KEY (id_item) REFERENCES item(id_item);
 
 
 --
 -- Name: item item_id_natureza_fkey; Type: FK CONSTRAINT; Schema: tp2; Owner: postgres
 --
 
-ALTER TABLE ONLY tp2.item
-    ADD CONSTRAINT item_id_natureza_fkey FOREIGN KEY (id_natureza) REFERENCES tp2.natureza(id_natureza);
+ALTER TABLE ONLY item
+    ADD CONSTRAINT item_id_natureza_fkey FOREIGN KEY (id_natureza) REFERENCES natureza(id_natureza);
 
 
 --
 -- Name: partido_presidente partido_presidente_id_despesa_fkey; Type: FK CONSTRAINT; Schema: tp2; Owner: postgres
 --
 
-ALTER TABLE ONLY tp2.partido_presidente
-    ADD CONSTRAINT partido_presidente_id_despesa_fkey FOREIGN KEY (id_despesa) REFERENCES tp2.despesa(id_despesa);
+ALTER TABLE ONLY partido_presidente
+    ADD CONSTRAINT partido_presidente_id_despesa_fkey FOREIGN KEY (id_despesa) REFERENCES despesa(id_despesa);
 
 
 --
 -- Name: partido_presidente partido_presidente_id_partido_fkey; Type: FK CONSTRAINT; Schema: tp2; Owner: postgres
 --
 
-ALTER TABLE ONLY tp2.partido_presidente
-    ADD CONSTRAINT partido_presidente_id_partido_fkey FOREIGN KEY (id_partido) REFERENCES tp2.partido(id_partido);
+ALTER TABLE ONLY partido_presidente
+    ADD CONSTRAINT partido_presidente_id_partido_fkey FOREIGN KEY (id_partido) REFERENCES partido(id_partido);
 
 
 --
 -- Name: partido_presidente partido_presidente_id_presidente_fkey; Type: FK CONSTRAINT; Schema: tp2; Owner: postgres
 --
 
-ALTER TABLE ONLY tp2.partido_presidente
-    ADD CONSTRAINT partido_presidente_id_presidente_fkey FOREIGN KEY (id_presidente) REFERENCES tp2.presidente(id_presidente);
+ALTER TABLE ONLY partido_presidente
+    ADD CONSTRAINT partido_presidente_id_presidente_fkey FOREIGN KEY (id_presidente) REFERENCES presidente(id_presidente);
 
 
 --
