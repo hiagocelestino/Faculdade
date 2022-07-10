@@ -1,35 +1,35 @@
-CREATE TABLE despesa (
+CREATE TABLE IF NOT EXISTS despesa (
     id_despesa integer NOT NULL,
     vlr_despesa integer,
     dat_compra date,
     id_item integer
 );
 
-CREATE TABLE item (
+CREATE TABLE IF NOT EXISTS item (
     id_item integer NOT NULL,
     nom_item character varying(255),
     id_natureza integer
 );
 
-CREATE TABLE natureza (
+CREATE TABLE IF NOT EXISTS natureza (
     id_natureza integer NOT NULL,
     nom_natureza character varying(255)
 );
 
-CREATE TABLE partido (
+CREATE TABLE IF NOT EXISTS partido (
     id_partido integer NOT NULL,
     nom_partido character varying(255),
     sigla character varying(255)
 );
 
-CREATE TABLE partido_presidente (
+CREATE TABLE NOT EXISTS partido_presidente (
     id_partido_presidente integer NOT NULL,
     id_partido integer,
     id_presidente integer,
     id_despesa integer
 );
 
-CREATE TABLE presidente (
+CREATE TABLE IF NOT EXISTS presidente (
     id_presidente integer NOT NULL,
     nom_presidente character varying(255),
     num_mandato character varying(255)
