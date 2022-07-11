@@ -28,10 +28,11 @@ CREATE TABLE IF NOT EXISTS partido_presidente (
     id_partido_presidente integer primary key,
     id_partido integer,
     id_presidente integer,
-    id_despesa integer not null unique,
+    id_despesa integer not null,
     foreign key(id_partido) references partido(id_partido),
     foreign key(id_presidente) references presidente(id_presidente),
-    foreign key(id_despesa) references despesa(id_despesa)
+    foreign key(id_despesa) references despesa(id_despesa),
+    unique(id_despesa)
 );
 
 CREATE TABLE IF NOT EXISTS presidente (
