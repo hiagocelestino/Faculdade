@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS partido_presidente (
     id_partido_presidente integer primary key,
     id_partido integer,
     id_presidente integer,
-    id_despesa integer,
+    id_despesa integer not null unique,
     foreign key(id_partido) references partido(id_partido),
     foreign key(id_presidente) references presidente(id_presidente),
     foreign key(id_despesa) references despesa(id_despesa)
@@ -40,6 +40,29 @@ CREATE TABLE IF NOT EXISTS presidente (
     num_mandato character varying(255)
 );
 
+INSERT INTO natureza (id_natureza, nom_natureza) VALUES (1, 'DIARIAS - PESSOAL CIVIL');
+INSERT INTO natureza (id_natureza, nom_natureza) VALUES (2, 'MATERIAL DE CONSUMO');
+INSERT INTO natureza (id_natureza, nom_natureza) VALUES (3, 'OBRIGACOES TRIBUTARIAS E CONTRIBUTIVAS');
+INSERT INTO natureza (id_natureza, nom_natureza) VALUES (4, 'OUTROS SERVICOS DE TERCEIROS - PESSOA JURIDICA');
+INSERT INTO natureza (id_natureza, nom_natureza) VALUES (5, 'PASSAGENS E DESPESAS COM LOCOMOCAO');
+INSERT INTO natureza (id_natureza, nom_natureza) VALUES (6, 'VENCIMENTOS E VANTAGENS FIXAS - PESSOAL CIVIL');
+INSERT INTO natureza (id_natureza, nom_natureza) VALUES (7, 'VALOR DE ESCAPE – SIAFIWEB');
+INSERT INTO natureza (id_natureza, nom_natureza) VALUES (8, 'SERVICOS DE TECNOLOGIA DA INFORMACAO E COMUNICACAO – PJ');
+
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (1, 'DIARIAS NO PAIS', 1);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (2, 'DIARIAS NO EXTERIOR', 1);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (3, 'TAXAS', 3);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (4, 'COMBUSTIVEIS E LUBRIFICANTES AUTOMOTIVOS', 2);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (5, 'SERVICOS DE TELECOMUNICACOES', 4);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (6, 'SEGUROS EM GERAL', 4);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (7, 'MANUTENCAO E CONSERV. DE VEICULOS', 4);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (8, 'PASSAGENS PARA O PAIS', 5);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (9, 'PASSAGENS PARA O EXTERIOR', 5);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (10, 'GRATIFICACAO P/EXERCICIO DE CARGO EM COMISSAO', 6);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (11, 'VALOR DE ESCAPE - SIAFIWEB', 7);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (12, 'MATERIAL P/ MANUTENCAO DE VEICULOS', 2);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (13, 'TELEFONIA FIXA E MOVEL - PACOTE DE COMUNICACAO DE DADOS', 8);
+INSERT INTO item (id_item, nom_item, id_natureza) VALUES (14, 'LOCACAO DE MEIOS DE TRANSPORTE', 5);
 
 INSERT INTO despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (259, 341, '2022-01-04', 1);
 INSERT INTO despesa (id_despesa, vlr_despesa, dat_compra, id_item) VALUES (260, 824, '2022-01-04', 6);
